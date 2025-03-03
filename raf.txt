@@ -1,0 +1,12 @@
+                <div class="flex items-center gap-2">
+                    <button class="hover:bg-primary hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">
+                        <img src="./images/left_arrow.svg" alt="icons">
+                    </button>
+                    <button class="hover:bg-primary hover:shadow hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">1</button>
+                    <button class="hover:bg-primary hover:shadow hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">2</button>
+                    <button class="hover:bg-primary hover:shadow hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">3</button>
+                    <button class="hover:bg-primary hover:shadow hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">4</button>
+                    <button class="hover:bg-primary hover:shadow hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">
+                        <img src="./images/right_arrow.svg" alt="icons">
+                    </button>
+                </div>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .bg_img {
+            background: url("./images/banner_.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        .shadow {
+            box-shadow: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+        }
+
+        .bg-collor {
+            background-color: rgba(99, 101, 241, 0.35);
+        }
+
+        .p_coll0r {
+            background-color: rgba(99, 101, 241, 0.12);
+        }
+
+        .contact_img {
+            background: url("./images/Contact.jpg");
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no repeat;
+            background-size: cover;
+        }
+
+        .text_color {
+            background: linear-gradient(90deg, #6366F1 0%, #8B5CF6 50%, #D946EF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- ============================
+     navbar
+     ================================ -->
+    <div class="container">
+        <nav class="py-3">
+            <div class="flex justify-between items-center gap-6">
+                <div class="flex items-center gap-12">
+                    <div>
+                        <img src="./images/main_logo.svg" alt="logo">
+                    </div>
+                    <ul class="flex items-center gap-6">
+                        <li class="flex items-center gap-1"><a
+                                class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">Services</a>
+                            <span>
+                                <img src="./images/dropdown.svg" alt="icons">
+                            </span>
+                        </li>
+                        <li><a class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">Portfolio</a>
+                        </li>
+                        <li><a class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">About</a></li>
+                        <li><a class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">Blog</a></li>
+                        <li><a class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-8">
+                    <div class="flex items-center gap-4">
+                        <label class="text-[#565973] text-[16px] font-semibold" for="check">Light</label>
+                        <input type="checkbox" id="check" class="hidden">
+                        <div class="relative w-[46px] h-[24px] bg-primary rounded-full p-[2px]">
+                            <span class="absolute size-[20px] rounded-full bg-white"></span>
+                        </div>
+                        <label class="text-[#565973] text-[16px] font-semibold" for="check">Dark</label>
+                    </div>
+                    <button class="btn_primary">Contact us</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ==========================
+     banner
+     ============================== -->
+    <section class="py-[94px] bg_img">
+        <div class="container">
+            <div class="flex justify-between gap-6">
+                <div>
+                    <div class="flex gap-4 items-center pb-[25px]">
+                        <button class="shadow size-[52px] flex justify-center items-center rounded-full bg-white">
+                            <img src="./images/play_btn.svg" alt="icons">
+                        </button>
+                        <h4>Digital Agency Promo</h4>
+                    </div>
+                    <h1 class="max-w-[636px] text-[72px] font-extrabold leading-[1.3]">We <span
+                            class="text_color">Transform</span> Your
+                        Ideas into Reality</h1>
+                    <div class="flex gap-10 pt-[64px]">
+                        <button class="whitespace-nowrap shadow btn_primary h-[52px] text-[16px] font-semibold">Work
+                            with us</button>
+                        <p class="max-w-[434px] text-[#565973] text-[16px] leading-[1.6]">Silicon is a leading
+                            full-service digital agency based in New York. We make mobile apps,websites & brands, that
+                            people appreciate all around the world.
+                        <p>
+                    </div>
+
+                    <div class="flex gap-4 items-center pt-[167px]">
+                        <button class="shadow size-[52px] flex justify-center items-center rounded-full bg-white">
+                            <img src="./images/play_btn.svg" alt="icons">
+                        </button>
+                        <h4 class="text-[14px] leading-[1.6] text-[#565973]">Discover more</h4>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/banner_img.svg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================
+     Award
+     ============================ -->
+    <section class="py-[112px]">
+        <div class="container">
+            <div class="flex items-center">
+                <div class="text-center w-[336px] pr-[72px]">
+                    <div class="size-[48px] mx-auto">
+                        <img src="./images/idea.svg" alt="icons">
+                    </div>
+                    <h3 class="pt-6 font-extrabold text-[24px] leading-[1.4] pb-3">Creative Solutions</h3>
+                    <p class="max-w-[336px] text-[16px] leading-[1.6] text-[#565973]">Sed morbi nulla pulvinar lectus
+                        tempor vel euismod accumsan.</p>
+                </div>
+
+                <div class="text-center border-r border-l border-[#E2E5F1] px-[72px]">
+                    <div class="size-[48px] mx-auto">
+                        <img src="./images/award_wining.svg" alt="icons">
+                    </div>
+                    <h3 class="pt-6 font-extrabold text-[24px] leading-[1.4] pb-3">Award Winning</h3>
+                    <p class="max-w-[336px] text-[16px] leading-[1.6] text-[#565973]">Sit facilisis dolor arcu,
+                        fermentum vestibulum arcu elementum imperdiet.</p>
+                </div>
+
+                <div class="text-center w-[336px] pl-[72px]">
+                    <div class="size-[48px] mx-auto">
+                        <img src="./images/team.svg" alt="icons">
+                    </div>
+                    <h3 class="pt-6 font-extrabold text-[24px] leading-[1.4] pb-3">Team of Professionals</h3>
+                    <p class="max-w-[336px] text-[16px] leading-[1.6] text-[#565973]">Nam venenatis urna aenean quis
+                        feugiat et senectus turpis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================== 
+      projects
+      ============================ -->
+    <section>
+        <div class="container">
+            <h2 class="text-center text-[40px] leading-[1.3] font-extrabold pb-6">Featured Projects</h2>
+            <p class="max-w-[636px] mx-auto text-center text-[#9397AD] text-[18px] leading-[1.6]">We create websites and
+                mobile apps, marketing materials, branding, web design, UX/UI design and illustrations.</p>
+
+            <div class="grid grid-cols-[416px_auto] gap-6 py-10">
+                <div class="max-w-[416px] h-[835px]">
+                    <img class="object-cover w-full h-full" src="./images/image_one.jpg" alt="image">
+                </div>
+                <div>
+                    <div class="flex gap-6">
+                        <div class="max-w-[416px] h-[416px]">
+                            <img class="object-cover w-full h-full" src="./images/image_two.jpg" alt="image">
+                        </div>
+                        <div class="max-w-[416px] h-[416px]">
+                            <img class="object-cover w-full h-full" src="./images/image_three.jpg" alt="image">
+                        </div>
+                    </div>
+                    <div class="max-w-[856px] h-[416px] pt-6">
+                        <img class="object-cover w-full h-full" src="./images/image_four.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+            <button class="btn_primary ml-[50%]">Explore all</button>
+        </div>
+    </section>
+    <!-- ======================
+       Competencies
+       ========================== -->
+    <section class="pt-[96px]">
+        <div class="container bg-[#F3F6FF] py-[72px] px-[220px]">
+            <h3 class="text-center text-[40px] font-extrabold leading-[1.3]">Our Competencies</h3>
+            <p class="max-w-[856px] mx-auto text-center pt-[24px] pb-[40px] text-[#9397AD] text-[18px] leading-[1.6]">We
+                fully understand your business. If you
+                need to update something, we are more than happy to help you with the services we are providing.</p>
+
+            <div
+                class="max-w-[856px] mx-auto bg-white flex justify-between items-center py-[18px] px-6 rounded-[8px] shadow mb-4">
+                <p class="text-[20px] font-semibold leading-[1.6]">Digital Marketing</p>
+                <button class="cursor-pointer size-[36px] rounded-full bg-[#F3F6FF] flex justify-center items-center">
+                    <img src="./images/dropdown.svg" alt="image">
+                </button>
+            </div>
+
+            <div class="max-w-[856px] mx-auto bg-white py-[18px] px-6 rounded-[8px] shadow mb-4">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-[20px] font-semibold leading-[1.6]">Web Development</p>
+                    </div>
+                    <button
+                        class="cursor-pointer size-[36px] rounded-full bg-primary flex justify-center items-center rotate-[180deg]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M10.862 6.19534L7.99998 9.05734L5.13798 6.19534L4.19531 7.13801L7.99998 10.9427L11.8046 7.13801L10.862 6.19534Z"
+                                fill="#ffffff" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex gap-10 items-center">
+                    <div class="min-w-[200px]">
+                        <img class="object-cover" src="./images/pc.png" alt="img">
+                    </div>
+                    <p class="text-[16px] leading-[1.6] text-[#565973] max-w-[568px]">Vitae varius euismod egestas
+                        egestas lacus. Augue vitae arcu sollicitudin metus iaculis amet, eu at amet. Netus pulvinar
+                        tristique ridiculus sed. Viverra ut viverra aenean nisl. Tortor lorem cum congue a. Orci mattis
+                        massa tortor magna massa nisi, aliquet risus. Ornare cras aenean pellentesque quam pulvinar at.
+                        Libero mollis tortor erat sed. Adipiscing lectus nisi commodo vel. Id augue vitae, hendrerit
+                        iaculis.</p>
+                </div>
+            </div>
+
+            <div
+                class="max-w-[856px] mx-auto bg-white flex justify-between items-center py-[18px] px-6 rounded-[8px] shadow mb-4">
+                <p class="text-[20px] font-semibold leading-[1.6]">Application Development</p>
+                <button class="cursor-pointer size-[36px] rounded-full bg-[#F3F6FF] flex justify-center items-center">
+                    <img src="./images/dropdown.svg" alt="image">
+                </button>
+            </div>
+
+            <div
+                class="max-w-[856px] mx-auto bg-white flex justify-between items-center py-[18px] px-6 rounded-[8px] shadow mb-4">
+                <p class="text-[20px] font-semibold leading-[1.6]">Strategy</p>
+                <button class="cursor-pointer size-[36px] rounded-full bg-[#F3F6FF] flex justify-center items-center">
+                    <img src="./images/dropdown.svg" alt="image">
+                </button>
+            </div>
+
+            <div
+                class="max-w-[856px] mx-auto bg-white flex justify-between items-center py-[18px] px-6 rounded-[8px] shadow mb-4">
+                <p class="text-[20px] font-semibold leading-[1.6]">Digital Advertising</p>
+                <button class="cursor-pointer size-[36px] rounded-full bg-[#F3F6FF] flex justify-center items-center">
+                    <img src="./images/dropdown.svg" alt="image">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================
+     Clients
+     =========================== -->
+    <section class="pt-[96px]">
+        <div class="container">
+            <div class="flex items-center justify-between gap-4">
+                <h3 class="pb-10 text-[32px] font-extrabold leading-[1.3]">Trusted by Awesome Clients</h3>
+                <div class="flex gap-4 items-center">
+                    <div class="bg-white size-[36px] shadow p-2 rounded-full">
+                        <img src="./images/left_arrow.svg" alt="icons">
+                    </div>
+                    <div class="bg-white size-[36px] shadow p-2 rounded-full">
+                        <img src="./images/right_arrow.svg" alt="icons">
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-6 gap-6">
+                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                    <img src="./images/client_logo_one.svg" alt="logo">
+                </div>
+                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                    <img src="./images/clients_logo_two.svg" alt="logo">
+                </div>
+                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                    <img src="./images/clients_logo_three.svg" alt="logo">
+                </div>
+                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                    <img src="./images/clients_logo_four.svg" alt="logo">
+                </div>
+                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                    <img src="./images/clients_logo_five.svg" alt="logo">
+                </div>
+                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                    <img src="./images/clients_logo_six.svg" alt="logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================
+      About US
+      ============================ -->
+    <section class="pt-[112px]">
+        <div class="container">
+            <h2 class="text-center text-[40px] font-extrabold leading-[1.3] pb-[48px]">What They Say About Us</h2>
+            <div class="flex justify-between">
+                <div>
+                    <div class="shadow rounded-[8px] w-[808px] px-[20px] py-[48px]">
+                        <div class="p-[14px] bg-primary rounded-[8px] size-[52px] mb-8">
+                            <img src="./images/slider_icon.svg" alt="icons">
+                        </div>
+                        <p class="text-[#565973] text-[18px] leading-[1.6] pb-6">Dolor, a eget elementum, integer nulla
+                            volutpat, nunc, sit. Quam iaculis varius mauris magna sem. Egestas sed sed suscipit dolor
+                            faucibus dui imperdiet at eget. Tincidunt imperdiet quis hendrerit aliquam feugiat neque
+                            cras sed. Dictum quam integer volutpat tellus, faucibus platea. Pulvinar turpis proin
+                            faucibus at mauris. Sagittis gravida vitae porta enim, nulla arcu fermentum massa. Tortor
+                            ullamcorper lacus. Pellentesque lectus adipiscing aenean volutpat tortor habitant.</p>
+                        <ul class="flex gap-1 items-center">
+                            <li><i class="fa-solid fa-star text-[#FFBA08]"></i></li>
+                            <li><i class="fa-solid fa-star text-[#FFBA08]"></i></li>
+                            <li><i class="fa-solid fa-star text-[#FFBA08]"></i></li>
+                            <li><i class="fa-solid fa-star text-[#FFBA08]"></i></li>
+                            <li><i class="fa-solid fa-star text-[#FFBA08]"></i></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex items-center gap-2 pt-[48px]">
+                        <button
+                            class="hover:bg-primary hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">
+                            <img src="./images/left_arrow.svg" alt="icons">
+                        </button>
+                        <button
+                            class="hover:bg-primary hover:shadow hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">1</button>
+                        <button
+                            class="hover:bg-primary hover:shadow hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">2</button>
+                        <button
+                            class="hover:bg-primary hover:shadow hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">3</button>
+                        <button
+                            class="hover:bg-primary hover:shadow hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">4</button>
+                        <button
+                            class="hover:bg-primary hover:shadow hover:text-white rounded-[4px] p-[9px] bg-[#EFF2FC] size-[36px] flex justify-center items-center">
+                            <img src="./images/right_arrow.svg" alt="icons">
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="rounded-[8px] overflow-hidden">
+                        <img class="min-w-[416px] object-cover w-full h-full" src="./images/about.jpg" alt="image">
+                    </div>
+                    <div class="flex pt-[32px]">
+                        <div class="py-[17px] px-5">
+                            <img src="./images/client_logo_one.svg" alt="logo">
+                        </div>
+                        <div class="py-[5px] pl-6 border-l border-[#E2E5F1]">
+                            <h3 class="text-[20px] font-extrabold leading-[1.4]">Ralph Edwards</h3>
+                            <p class="text-[14px] text-[#9397AD] leading-[1.6] pt-1">Head of Marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+       Creative Atmosphere
+       ============================ -->
+    <section class="pt-[112px]">
+        <div class="container">
+            <div class="flex items-center gap-7">
+                <h3 class="text-[40px] font-extrabold leading-[1.4]">Our Creative Atmosphere</h3>
+                <div>
+                    <img src="./images/atmosphere_icon.svg" alt="icons">
+                </div>
+            </div>
+            <div class="rounded-[8px] overflow-hidden pt-[48px]">
+                <img class="object-cover w-full h-full" src="./images/creative_banner.svg" alt="icons">
+            </div>
+
+            <div class="flex items-center justify-between gap-4 pt-[96px] pb-[114px]">
+                <h2 class="max-w-[410px] text-[32px] font-extrabold leading-[1.3] text-[#0B0F19]">Award-winning designs
+                    featured by</h2>
+                <div class="flex items-center gap-[56px]">
+                    <div class="max-w-[140px]">
+                        <div>
+                            <img src="./images/4X_mobile.svg" alt="icons">
+                        </div>
+                        <p class="text-[#565973] text-[14px] leading-[1.6] text-center pt-4">4x mobile of the day</p>
+                    </div>
+
+                    <div class="max-w-[140px]">
+                        <div>
+                            <img src="./images/cssda.svg" alt="icons">
+                        </div>
+                        <p class="text-[#565973] text-[14px] leading-[1.6] text-center pt-4">1x Kudos</p>
+                    </div>
+
+                    <div class="max-w-[140px]">
+                        <div>
+                            <img src="./images/website.svg" alt="icons">
+                        </div>
+                        <p class="text-[#565973] text-[14px] leading-[1.6] pt-4">3x website of the day</p>
+                    </div>
+
+                    <div class="max-w-[140px]">
+                        <div>
+                            <img src="./images/best_website.svg" alt="icons">
+                        </div>
+                        <p class="text-[#565973] text-[14px] leading-[1.6] pt-4">2x best website</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================
+       Our Blog
+    ============================ -->
+    <section class="bg-collor h-[1154px]">
+        <div class="container">
+            <h3 class="text-center text-[40px] font-extrabold leading-[1.3] pt-[96px] pb-[40px]">Latest From Our Blog
+            </h3>
+            <div class="grid grid-cols-[526px_1fr] gap-6">
+                <div class="bg-white rounded-t-[8px]">
+                    <div class="rounded-t-[8px] overflow-hidden relative">
+                        <div class="absolute bg-white size-[36px] rounded-full p-[9px] right-4 top-4">
+                            <img src="./images/bookmark.svg" alt="icons">
+                        </div>
+                        <img src="./images/watch.jpg" alt="image">
+                    </div>
+                    <div class="px-6">
+                        <div class="pt-6 pb-4 flex justify-between">
+                            <p class="text-[#6366F1] text-[14px] font-semibold px-2 p_coll0r rounded-[4px]">Digital</p>
+                            <p class="text-[14px] leading-[1.6] text-[#9397AD]">12 hours ago</p>
+                        </div>
+                        <h4 class="text-[20px] font-extrabold leading-[1.4] pb-[24px] border-b border-[#E2E5F1]">A study
+                            on smartwatch design qualities and people’s preferences</h4>
+                        <div class="pt-6 flex gap-4">
+                            <div class="size-[48px] rounded-full overflow-hidden">
+                                <img src="./images/jerome_bell.jpg" alt="images">
+                            </div>
+                            <div>
+                                <p class="text-[16px] font-bold leading-[1.6]">Jerome Bell</p>
+                                <p class="text-[#9397AD] text-[14px] leading-[1.6]">Marketing Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex bg-white rounded-[8px] overflow-hidden">
+                        <div class="relative">
+                            <divs class="size-[36px] rounded-full bg-white p-[9px] absolute right-[16px] top-[16px]">
+                                <img src="./images/bookmark.svg" alt="icons">
+                            </divs>
+                            <img class="object-cover h-full" src="./images/astronot.jpg" alt="image">
+                        </div>
+                        <div class="w-[440px] p-6">
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#6366F1] text-[14px] font-semibold p_coll0r rounded-[4px]">Design</p>
+                                <p class="text-[14px] leading-[1.6] text-[#9397AD]">1 day ago</p>
+                            </div>
+                            <h3 class="text-[20px] font-extrabold leading-[1.4] pt-4 pb-6 border-b border-[#E2E5F1]">
+                                Brand analysis: second step to the brand identity</h3>
+
+                            <div class="pt-6 flex items-center gap-4">
+                                <div class="rounded-full overflow-hidden">
+                                    <img src="./images/annette.jpg" alt="image">
+                                </div>
+                                <div>
+                                    <p class="text-[16px] font-bold leading-[1.6]">Annette Black</p>
+                                    <p class="text-[#9397AD] text-[14px] leading-[1.6]">Product Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex bg-white rounded-[8px] overflow-hidden mt-6">
+                            <div class="relative">
+                                <div class="size-[36px] rounded-full bg-white p-[9px] absolute right-[16px] top-[16px]">
+                                    <img src="./images/bookmark.svg" alt="icons">
+                                </div>
+                                <img class="object-cover h-full" src="./images/laptop.jpg" alt="image">
+                            </div>
+                            <div class="w-[440px] p-6">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-[#6366F1] text-[14px] font-semibold p_coll0r rounded-[4px]">Tips &
+                                        Advice</p>
+                                    <p class="text-[14px] leading-[1.6] text-[#9397AD]">May 24, 2021</p>
+                                </div>
+                                <h3
+                                    class="text-[20px] font-extrabold leading-[1.4] pt-4 pb-6 border-b border-[#E2E5F1]">
+                                    How to check the website before releasing it?</h3>
+
+                                <div class="pt-6 flex items-center gap-4">
+                                    <div class="rounded-full overflow-hidden">
+                                        <img src="./images/marvin.jpg" alt="image">
+                                    </div>
+                                    <div>
+                                        <p class="text-[16px] font-bold leading-[1.6]">Marvin McKinney</p>
+                                        <p class="text-[#9397AD] text-[14px] leading-[1.6]">Senior UI/UX Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="py-[13px] px-8 border border-[#6366F1] rounded-[8px] text-[16px] font-semibold leading-[1.6] text-[#6366F1] mt-8 mx-[45%] text-nowrap cursor-pointer">
+                More blog posts
+            </button>
+
+            <div class="pt-[112px] container">
+                <div class="contact_img pt-[96px] pb-[104px] rounded-[8px]">
+                    <p class="text-[24px] leading-[1.6] text-center text-white pb-4">Want to work with us? Let’s talk
+                    </p>
+                    <h3 class="text-white text-center text-[40px] font-extrabold leading-[1.3]
+                    pb-[48px]">example@gmail.com</h3>
+                    <button class="py-[13px] px-8 bg-white rounded-[8px] mx-[45%] text-nowrap cursor-pointer">Contact
+                        us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
