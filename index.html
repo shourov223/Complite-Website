@@ -52,14 +52,14 @@
     <!-- ============================
      navbar
      ================================ -->
-    <div class="container">
+    <header class="container">
         <nav class="py-3">
             <div class="flex justify-between items-center gap-6">
                 <div class="flex items-center gap-12">
-                    <div>
+                    <div class="min-w-[112px]">
                         <img src="./images/main_logo.svg" alt="logo">
                     </div>
-                    <ul class="flex items-center gap-6">
+                    <ul class="md:flex md:items-center md:gap-2 lg:gap-4 xl:gap-6 hidden md:block">
                         <li class="flex items-center gap-1"><a
                                 class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">Services</a>
                             <span>
@@ -73,7 +73,7 @@
                         <li><a class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="flex items-center gap-8">
+                <div class="flex items-center gap-8 hidden lg:block">
                     <div class="flex items-center gap-4">
                         <label class="text-[#565973] text-[16px] font-semibold" for="check">Light</label>
                         <input type="checkbox" id="check" class="hidden">
@@ -82,15 +82,15 @@
                         </div>
                         <label class="text-[#565973] text-[16px] font-semibold" for="check">Dark</label>
                     </div>
-                    <button class="btn_primary">Contact us</button>
                 </div>
+                <button class="btn_primary text-nowrap">Contact us</button>
             </div>
         </nav>
-    </div>
+    </header>
     <!-- ==========================
      banner
      ============================== -->
-    <section class="py-[94px] bg_img">
+    <section class="py-[40px] lg:py-[94px] bg_img">
         <div class="container">
             <div class="flex justify-between gap-6">
                 <div>
@@ -100,11 +100,11 @@
                         </button>
                         <h4>Digital Agency Promo</h4>
                     </div>
-                    <h1 class="max-w-[636px] text-[72px] font-extrabold leading-[1.3]">We <span
+                    <h1 class="max-w-[636px] text-[30px] md:text-[40px] lg:text-[72px] font-extrabold leading-[1.3]">We <span
                             class="text_color">Transform</span> Your
                         Ideas into Reality</h1>
-                    <div class="flex gap-10 pt-[64px]">
-                        <button class="whitespace-nowrap shadow btn_primary h-[52px] text-[16px] font-semibold">Work
+                    <div class="lg:flex gap-10 lg:pt-[64px] pt-[30px]">
+                        <button class=" mb-[15px] lg:mb-0 whitespace-nowrap shadow btn_primary h-[52px] text-[16px] font-semibold">Work
                             with us</button>
                         <p class="max-w-[434px] text-[#565973] text-[16px] leading-[1.6]">Silicon is a leading
                             full-service digital agency based in New York. We make mobile apps,websites & brands, that
@@ -112,14 +112,14 @@
                         <p>
                     </div>
 
-                    <div class="flex gap-4 items-center pt-[167px]">
+                    <div class="flex gap-4 items-center pt-10 lg:pt-[167px]">
                         <button class="shadow size-[52px] flex justify-center items-center rounded-full bg-white">
                             <img src="./images/play_btn.svg" alt="icons">
                         </button>
                         <h4 class="text-[14px] leading-[1.6] text-[#565973]">Discover more</h4>
                     </div>
                 </div>
-                <div>
+                <div class="hidden lg:block">
                     <img src="./images/banner_img.svg" alt="img">
                 </div>
             </div>
@@ -130,8 +130,8 @@
      ============================ -->
     <section class="py-[112px]">
         <div class="container">
-            <div class="flex items-center">
-                <div class="text-center w-[336px] pr-[72px]">
+            <div class="md:flex items-center">
+                <div class="text-center w-[336px] pb-[30px] md:pb-0 md:pr-[72px] sm:mx-auto">
                     <div class="size-[48px] mx-auto">
                         <img src="./images/idea.svg" alt="icons">
                     </div>
@@ -140,16 +140,16 @@
                         tempor vel euismod accumsan.</p>
                 </div>
 
-                <div class="text-center border-r border-l border-[#E2E5F1] px-[72px]">
+                <div class="text-center md:border-r border-b border-t md:border-b-0 md:border-t-0 md:border-l border-[#E2E5F1] py-[30px] md:py-0 md:px-[30px] lg:px-[72px]">
                     <div class="size-[48px] mx-auto">
                         <img src="./images/award_wining.svg" alt="icons">
                     </div>
-                    <h3 class="pt-6 font-extrabold text-[24px] leading-[1.4] pb-3">Award Winning</h3>
-                    <p class="max-w-[336px] text-[16px] leading-[1.6] text-[#565973]">Sit facilisis dolor arcu,
+                    <h3 class="pt-6 font-extrabold mx-auto text-[24px] leading-[1.4] pb-3">Award Winning</h3>
+                    <p class="max-w-[336px] text-[16px] mx-auto leading-[1.6] text-[#565973]">Sit facilisis dolor arcu,
                         fermentum vestibulum arcu elementum imperdiet.</p>
                 </div>
 
-                <div class="text-center w-[336px] pl-[72px]">
+                <div class="text-center w-[336px] pt-[30px] md:pt-0 md:pl-[72px] sm:mx-auto">
                     <div class="size-[48px] mx-auto">
                         <img src="./images/team.svg" alt="icons">
                     </div>
@@ -169,20 +169,20 @@
             <p class="max-w-[636px] mx-auto text-center text-[#9397AD] text-[18px] leading-[1.6]">We create websites and
                 mobile apps, marketing materials, branding, web design, UX/UI design and illustrations.</p>
 
-            <div class="grid grid-cols-[416px_auto] gap-6 py-10">
-                <div class="max-w-[416px] h-[835px]">
+            <div class="sm:grid sm:grid-cols-[200px_auto] lg:grid-cols-[416px_auto] gap-6 py-10">
+                <div class="max-w-[416px] sm:h-[379px] lg:h-[835px]">
                     <img class="object-cover w-full h-full" src="./images/image_one.jpg" alt="image">
                 </div>
-                <div>
+                <div class="mt-5 sm:mt-0">
                     <div class="flex gap-6">
-                        <div class="max-w-[416px] h-[416px]">
+                        <div class="h-[165px] lg:max-w-[416px] lg:h-[416px]">
                             <img class="object-cover w-full h-full" src="./images/image_two.jpg" alt="image">
                         </div>
-                        <div class="max-w-[416px] h-[416px]">
+                        <div class="h-[165px] lg:max-w-[416px] lg:h-[416px]">
                             <img class="object-cover w-full h-full" src="./images/image_three.jpg" alt="image">
                         </div>
                     </div>
-                    <div class="max-w-[856px] h-[416px] pt-6">
+                    <div class="max-w-[856px] lg:h-[416px] pt-6">
                         <img class="object-cover w-full h-full" src="./images/image_four.jpg" alt="image">
                     </div>
                 </div>
@@ -193,9 +193,9 @@
     <!-- ======================
        Competencies
        ========================== -->
-    <section class="pt-[96px]">
+    <section class="pt-[40px] lg:pt-[96px]">
         <div class="container bg-[#F3F6FF] py-[72px] px-[220px]">
-            <h3 class="text-center text-[40px] font-extrabold leading-[1.3]">Our Competencies</h3>
+            <h3 class="text-center text-[30px] lg:text-[40px] font-extrabold leading-[1.3]">Our Competencies</h3>
             <p class="max-w-[856px] mx-auto text-center pt-[24px] pb-[40px] text-[#9397AD] text-[18px] leading-[1.6]">We
                 fully understand your business. If you
                 need to update something, we are more than happy to help you with the services we are providing.</p>
@@ -222,7 +222,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="flex gap-10 items-center">
+                <div class="md:flex gap-5 lg:gap-10 items-center">
                     <div class="min-w-[200px]">
                         <img class="object-cover" src="./images/pc.png" alt="img">
                     </div>
@@ -264,10 +264,10 @@
     <!-- =======================
      Clients
      =========================== -->
-    <section class="pt-[96px]">
+    <section class="pt-[40px] lg:pt-[96px]">
         <div class="container">
             <div class="flex items-center justify-between gap-4">
-                <h3 class="pb-10 text-[32px] font-extrabold leading-[1.3]">Trusted by Awesome Clients</h3>
+                <h3 class="pb-10 text-[20px] lg:text-[32px] font-extrabold leading-[1.3]">Trusted by Awesome Clients</h3>
                 <div class="flex gap-4 items-center">
                     <div class="bg-white size-[36px] shadow p-2 rounded-full">
                         <img src="./images/left_arrow.svg" alt="icons">
@@ -277,23 +277,23 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-6 gap-6">
-                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-6">
+                <div class="flex justify-center items-center px-[39px] py-[35px] border border-[#E2E5F1]">
                     <img src="./images/client_logo_one.svg" alt="logo">
                 </div>
-                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                <div class="flex justify-center items-center px-[39px] py-[35px] border border-[#E2E5F1]">
                     <img src="./images/clients_logo_two.svg" alt="logo">
                 </div>
-                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                <div class="flex justify-center items-center px-[39px] py-[35px] border border-[#E2E5F1]">
                     <img src="./images/clients_logo_three.svg" alt="logo">
                 </div>
-                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                <div class="flex justify-center items-center px-[39px] py-[35px] border border-[#E2E5F1]">
                     <img src="./images/clients_logo_four.svg" alt="logo">
                 </div>
-                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                <div class="flex justify-center items-center px-[39px] py-[35px] border border-[#E2E5F1]">
                     <img src="./images/clients_logo_five.svg" alt="logo">
                 </div>
-                <div class="px-[39px] py-[35px] border border-[#E2E5F1]">
+                <div class="flex justify-center items-center px-[39px] py-[35px] border border-[#E2E5F1]">
                     <img src="./images/clients_logo_six.svg" alt="logo">
                 </div>
             </div>
@@ -302,12 +302,12 @@
     <!-- ========================
       About US
       ============================ -->
-    <section class="pt-[112px]">
+    <section class="pt-[50px] lg:pt-[112px]">
         <div class="container">
-            <h2 class="text-center text-[40px] font-extrabold leading-[1.3] pb-[48px]">What They Say About Us</h2>
-            <div class="flex justify-between">
+            <h2 class="text-center text-[30px] lg:text-[40px] font-extrabold leading-[1.3] pb-[20px] lg:pb-[48px]">What They Say About Us</h2>
+            <div class="xl:flex justify-between items-center">
                 <div>
-                    <div class="shadow rounded-[8px] w-[808px] px-[20px] py-[48px]">
+                    <div class="shadow rounded-[8px] max-w-[808px] px-[20px] py-[48px]">
                         <div class="p-[14px] bg-primary rounded-[8px] size-[52px] mb-8">
                             <img src="./images/slider_icon.svg" alt="icons">
                         </div>
@@ -347,7 +347,7 @@
                 </div>
 
                 <div>
-                    <div class="rounded-[8px] overflow-hidden">
+                    <div class="rounded-[8px] overflow-hidden mt-5 xl:mt-0">
                         <img class="min-w-[416px] object-cover w-full h-full" src="./images/about.jpg" alt="image">
                     </div>
                     <div class="flex pt-[32px]">
@@ -370,7 +370,7 @@
     <section class="pt-[112px]">
         <div class="container">
             <div class="flex items-center gap-7">
-                <h3 class="text-[40px] font-extrabold leading-[1.4]">Our Creative Atmosphere</h3>
+                <h3 class="text-[20px] lg:text-[40px] font-extrabold leading-[1.4]">Our Creative Atmosphere</h3>
                 <div>
                     <img src="./images/atmosphere_icon.svg" alt="icons">
                 </div>
@@ -379,10 +379,10 @@
                 <img class="object-cover w-full h-full" src="./images/creative_banner.svg" alt="icons">
             </div>
 
-            <div class="flex items-center justify-between gap-4 pt-[96px] pb-[114px]">
-                <h2 class="max-w-[410px] text-[32px] font-extrabold leading-[1.3] text-[#0B0F19]">Award-winning designs
+            <div class="flex flex-wrap lg:flex-nowrap items-center justify-between gap-4 pt-[96px] pb-[114px]">
+                <h2 class="max-w-[410px] text-[25px] lg:text-[32px] font-extrabold leading-[1.3] text-[#0B0F19]">Award-winning designs
                     featured by</h2>
-                <div class="flex items-center gap-[56px]">
+                <div class="flex items-center gap-[30px] lg:gap-[56px]">
                     <div class="max-w-[140px]">
                         <div>
                             <img src="./images/4X_mobile.svg" alt="icons">
@@ -414,116 +414,69 @@
             </div>
         </div>
     </section>
-    <!-- ========================
-       Our Blog
-    ============================ -->
-    <section class="bg-collor h-[1154px]">
+    <!-- ================
+     Footer
+     ==================== -->
+    <footer>
         <div class="container">
-            <h3 class="text-center text-[40px] font-extrabold leading-[1.3] pt-[96px] pb-[40px]">Latest From Our Blog
-            </h3>
-            <div class="grid grid-cols-[526px_1fr] gap-6">
-                <div class="bg-white rounded-t-[8px]">
-                    <div class="rounded-t-[8px] overflow-hidden relative">
-                        <div class="absolute bg-white size-[36px] rounded-full p-[9px] right-4 top-4">
-                            <img src="./images/bookmark.svg" alt="icons">
-                        </div>
-                        <img src="./images/watch.jpg" alt="image">
-                    </div>
-                    <div class="px-6">
-                        <div class="pt-6 pb-4 flex justify-between">
-                            <p class="text-[#6366F1] text-[14px] font-semibold px-2 p_coll0r rounded-[4px]">Digital</p>
-                            <p class="text-[14px] leading-[1.6] text-[#9397AD]">12 hours ago</p>
-                        </div>
-                        <h4 class="text-[20px] font-extrabold leading-[1.4] pb-[24px] border-b border-[#E2E5F1]">A study
-                            on smartwatch design qualities and people’s preferences</h4>
-                        <div class="pt-6 flex gap-4">
-                            <div class="size-[48px] rounded-full overflow-hidden">
-                                <img src="./images/jerome_bell.jpg" alt="images">
-                            </div>
-                            <div>
-                                <p class="text-[16px] font-bold leading-[1.6]">Jerome Bell</p>
-                                <p class="text-[#9397AD] text-[14px] leading-[1.6]">Marketing Specialist</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="sm:grid sm:grid-cols-[340px_1fr_1fr_1fr] lg:grid-cols-[600px_1fr_1fr_1fr] gap-5">
                 <div>
-                    <div class="flex bg-white rounded-[8px] overflow-hidden">
-                        <div class="relative">
-                            <divs class="size-[36px] rounded-full bg-white p-[9px] absolute right-[16px] top-[16px]">
-                                <img src="./images/bookmark.svg" alt="icons">
-                            </divs>
-                            <img class="object-cover h-full" src="./images/astronot.jpg" alt="image">
-                        </div>
-                        <div class="w-[440px] p-6">
-                            <div class="flex items-center justify-between">
-                                <p class="text-[#6366F1] text-[14px] font-semibold p_coll0r rounded-[4px]">Design</p>
-                                <p class="text-[14px] leading-[1.6] text-[#9397AD]">1 day ago</p>
-                            </div>
-                            <h3 class="text-[20px] font-extrabold leading-[1.4] pt-4 pb-6 border-b border-[#E2E5F1]">
-                                Brand analysis: second step to the brand identity</h3>
-
-                            <div class="pt-6 flex items-center gap-4">
-                                <div class="rounded-full overflow-hidden">
-                                    <img src="./images/annette.jpg" alt="image">
-                                </div>
-                                <div>
-                                    <p class="text-[16px] font-bold leading-[1.6]">Annette Black</p>
-                                    <p class="text-[#9397AD] text-[14px] leading-[1.6]">Product Manager</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="pb-6">
+                        <img src="./images/main_logo.svg" alt="logo">
                     </div>
-                    <div>
-                        <div class="flex bg-white rounded-[8px] overflow-hidden mt-6">
-                            <div class="relative">
-                                <div class="size-[36px] rounded-full bg-white p-[9px] absolute right-[16px] top-[16px]">
-                                    <img src="./images/bookmark.svg" alt="icons">
-                                </div>
-                                <img class="object-cover h-full" src="./images/laptop.jpg" alt="image">
+                    <p class="text-[#565973] max-w-[416px] pb-10 text-[14px] leading-[1.6]">Proin ipsum pharetra,
+                        senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis
+                        etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor
+                        ullamcorper sodales ultrices eros. </p>
+                    <p class="text-[14px] font-semibold leading-[1.6] pb-2">Subscribe to our newsletter</p>
+                    <div class="flex items-center max-w-[416px]">
+                        <div
+                            class="flex items-center gap-2 px-3 py-4 border h-[44px] border-[#B4B7C9] rounded-l-[8px] max-w-[416px]">
+                            <div>
+                                <img src="./images/email.svg" alt="email">
                             </div>
-                            <div class="w-[440px] p-6">
-                                <div class="flex items-center justify-between">
-                                    <p class="text-[#6366F1] text-[14px] font-semibold p_coll0r rounded-[4px]">Tips &
-                                        Advice</p>
-                                    <p class="text-[14px] leading-[1.6] text-[#9397AD]">May 24, 2021</p>
-                                </div>
-                                <h3
-                                    class="text-[20px] font-extrabold leading-[1.4] pt-4 pb-6 border-b border-[#E2E5F1]">
-                                    How to check the website before releasing it?</h3>
-
-                                <div class="pt-6 flex items-center gap-4">
-                                    <div class="rounded-full overflow-hidden">
-                                        <img src="./images/marvin.jpg" alt="image">
-                                    </div>
-                                    <div>
-                                        <p class="text-[16px] font-bold leading-[1.6]">Marvin McKinney</p>
-                                        <p class="text-[#9397AD] text-[14px] leading-[1.6]">Senior UI/UX Designer</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <input type="email" class="outline-none" placeholder="Your Email">
                         </div>
+                        <button class="btn_primary rounded-l-none h-[44px]">Subscribe</button>
                     </div>
                 </div>
-            </div>
-            <button
-                class="py-[13px] px-8 border border-[#6366F1] rounded-[8px] text-[16px] font-semibold leading-[1.6] text-[#6366F1] mt-8 mx-[45%] text-nowrap cursor-pointer">
-                More blog posts
-            </button>
 
-            <div class="pt-[112px] container">
-                <div class="contact_img pt-[96px] pb-[104px] rounded-[8px]">
-                    <p class="text-[24px] leading-[1.6] text-center text-white pb-4">Want to work with us? Let’s talk
-                    </p>
-                    <h3 class="text-white text-center text-[40px] font-extrabold leading-[1.3]
-                    pb-[48px]">example@gmail.com</h3>
-                    <button class="py-[13px] px-8 bg-white rounded-[8px] mx-[45%] text-nowrap cursor-pointer">Contact
-                        us</button>
-                </div>
+                <ul>
+                    <li class="pt-5 sm:pt-0"><a class="text-[16px] font-semibold leading-[1.6]" href="#">Home</a></li>
+                    <li>
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">Services</a>
+                    </li>
+                    <li>
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">Portfolio</a>
+                    </li>
+                    <li class="pb-10">
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><a class="text-[16px] font-semibold leading-[1.6]" href="#">Facebook</a></li>
+                    <li><a class="text-[16px] font-semibold leading-[1.6]" href="#">Linkedin</a></li>
+                    <li><a class="text-[16px] font-semibold leading-[1.6]" href="#">Twitter</a></li>
+                    <li><a class="text-[16px] font-semibold leading-[1.6]" href="#"> Instragram</a></li>
+                </ul>
+
+                <ul class="hidden md:block">
+                    <li><a class="text-[16px] font-semibold leading-[1.6]" href="#">Contact Us</a></li>
+                    <li class="text-primary text-[16px] leading-[1.6] font-semibold">example@gmail.com</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </footer>
 </body>
 
 </html>
