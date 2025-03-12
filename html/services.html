@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .shadow {
+            box-shadow: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+        }
+    </style>
+</head>
+<body>
+    <!-- ==============
+     NavBar
+     ================== -->
+    <header class="container">
+        <nav class="py-3">
+            <div class="flex justify-between items-center gap-6">
+                <div class="flex items-center gap-12">
+                    <div class="min-w-[112px]">
+                        <img src="../images/main_logo.svg" alt="logo">
+                    </div>
+                    <ul class="md:flex md:items-center md:gap-2 lg:gap-4 xl:gap-6 hidden md:block">
+                        <li class="flex items-center gap-1"><a
+                                class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">Services</a>
+                            <span>
+                                <img src="../images/dropdown.svg" alt="icons">
+                            </span>
+                        </li>
+                        <li><a class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">Portfolio</a>
+                        </li>
+                        <li><a class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">About</a></li>
+                        <li><a class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">Blog</a></li>
+                        <li><a class="text-[#33354D] text-[16px] leading-[1.6] font-semibold" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-8 hidden lg:block">
+                    <div class="flex items-center gap-4">
+                        <label class="text-[#565973] text-[16px] font-semibold" for="check">Light</label>
+                        <input type="checkbox" id="check" class="hidden">
+                        <div class="relative w-[46px] h-[24px] bg-primary rounded-full p-[2px]">
+                            <span class="absolute size-[20px] rounded-full bg-white"></span>
+                        </div>
+                        <label class="text-[#565973] text-[16px] font-semibold" for="check">Dark</label>
+                    </div>
+                </div>
+                <button class="btn_primary text-nowrap">Contact us</button>
+            </div>
+        </nav>
+    </header>
+    <!-- ===============
+     Icons
+     =================== -->
+    <section class="pt-5 pb-8">
+        <div class="container">
+            <div class="flex items-center gap-3">
+                <div class="flex items-center gap-1">
+                    <div>
+                        <img src="../images/home_page.svg" alt="icons">
+                    </div>
+                    <span class="text-[14px] leading-[1.6]">Homepage</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <div>
+                        <img src="../images/dubble_right_arrow.svg" alt="arrow">
+                    </div>
+                    <span class="text-[14px] leading-[1.6] text-primary">Services Page</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============
+    Services Page
+    ================== -->
+    <section class="bg-[#F3F6FF] pb-[250px] lg:pb-[338px] pt-8">
+        <div class="container">
+            <h1 class=" pb-[40px] lg:pb-[60px] font-extrabold text-[20px] lg:text-[40px] leading-[1.3]">Services Page</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-[40px]">
+                <div class="bg-white rounded-[8px] px-[20px] pb-[20px]">
+                    <div class="size-[40px] bg-primary rounded-[8px] p-[10px] translate-y-[-50%]">
+                        <img src="../images/software.svg" alt="icons">
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <h4 class=" text-[18px] lg:text-[24px] font-extrabold leading-[1.4]">Custom Software Development</h4>
+                        <div class="size-[28px] rounded-full border-[2px] flex justify-center items-center">
+                            <img src="../images/right_arrow.svg" alt="icons">
+                        </div>
+                    </div>
+                    <p class="text-[#565973] text-[14px] leading-[1.4] pt-4">Nisi, dis sed cursus eget pellentesque mattis. Odio eu proin aliquam a. Semper bibendum tellus non tellus, facilisi dignissim in quam massa. Aliquam, feugiat ut cum tellus, sit. Quis consectetur gravida ac ac lectus cursus egestas.</p>
+                </div>
+
+                <div class="bg-white rounded-[8px] px-[20px] pb-[20px]">
+                    <div class="size-[40px] bg-primary rounded-[8px] p-[10px] translate-y-[-50%]">
+                        <img src="../images/sofware_two.svg" alt="icons">
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <h4 class="text-[18px] lg:text-[24px] font-extrabold leading-[1.4]">Software Integration</h4>
+                        <div class="size-[28px] rounded-full border-[2px] flex justify-center items-center">
+                            <img src="../images/right_arrow.svg" alt="icons">
+                        </div>
+                    </div>
+                    <p class="text-[#565973] text-[14px] leading-[1.4] pt-4">Id eget blandit sapien cras massa lectus lorem placerat. Quam dolor commodo fermentum bibendum dictumst. Risus pretium eget at viverra eget. Sit neque adipiscing malesuada blandit justo, quam.</p>
+                </div>
+
+                <div class="bg-white rounded-[8px] px-[20px] pb-[20px]">
+                    <div class="size-[40px] bg-primary rounded-[8px] p-[10px] translate-y-[-50%]">
+                        <img src="../images/mobile_app.svg" alt="icons">
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <h4 class="text-[18px] lg:text-[24px] font-extrabold leading-[1.4]">Mobile App Development</h4>
+                        <div class="size-[28px] rounded-full border-[2px] flex justify-center items-center">
+                            <img src="../images/right_arrow.svg" alt="icons">
+                        </div>
+                    </div>
+                    <p class="text-[#565973] text-[14px] leading-[1.4] pt-4">Nunc, justo, diam orci, dictum purus convallis risus. Suscipit hendrerit at egestas id id blandit interdum est. Integer fames placerat turpis pretium quis hac leo lacus. Orci, dictum nunc mus quis semper eu bibendum enim, morbi.</p>
+                </div>
+
+                <div class="bg-white rounded-[8px] px-[20px] pb-[20px]">
+                    <div class="size-[40px] bg-primary rounded-[8px] p-[10px] translate-y-[-50%]">
+                        <img src="../images/business_ana.svg" alt="icons">
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <h4 class="text-[18px] lg:text-[24px] font-extrabold leading-[1.4]">Business Analytics</h4>
+                        <div class="size-[28px] rounded-full border-[2px] flex justify-center items-center">
+                            <img src="../images/right_arrow.svg" alt="icons">
+                        </div>
+                    </div>
+                    <p class="text-[#565973] text-[14px] leading-[1.4] pt-4">Gravida eget euismod tempus diam dignissim quam. Dignissim magnis blandit faucibus convallis augue nisl, etiam. Feugiat ut molestie non arcu senectus sed. Diam pellentesque sit mattis nec amet varius nunc a sed.</p>
+                </div>
+
+                <div class="bg-white rounded-[8px] px-[20px] pb-[20px]">
+                    <div class="size-[40px] bg-primary rounded-[8px] p-[10px] translate-y-[-50%]">
+                        <img src="../images/software_testing.svg" alt="icons">
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <h4 class="text-[18px] lg:text-[24px] font-extrabold leading-[1.4]">Software Testing</h4>
+                        <div class="size-[28px] rounded-full border-[2px] flex justify-center items-center">
+                            <img src="../images/right_arrow.svg" alt="icons">
+                        </div>
+                    </div>
+                    <p class="text-[#565973] text-[14px] leading-[1.4] pt-4">Quis rhoncus quam venenatis facilisi. Risus dis libero nisl condimentum quis. Tincidunt ultricies vulputate ornare nunc rhoncus in. Ultrices dolor eu natoque volutpat praesent curabitur ultricies. </p>
+                </div>
+
+                <div class="bg-white rounded-[8px] px-[20px] pb-[20px]">
+                    <div class="size-[40px] bg-primary rounded-[8px] p-[10px] translate-y-[-50%]">
+                        <img src="../images/timer.svg" alt="icons">
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <h4 class="text-[18px] lg:text-[24px] font-extrabold leading-[1.4]">Project Management</h4>
+                        <div class="size-[28px] rounded-full border-[2px] flex justify-center items-center">
+                            <img src="../images/right_arrow.svg" alt="icons">
+                        </div>
+                    </div>
+                    <p class="text-[#565973] text-[14px] leading-[1.4] pt-4">Massa dis morbi sagittis, tellus sit gravida. Id ut non ut in faucibus eu, ac. Tempus feugiat enim id pellentesque a sagittis vitae, convallis. Nunc, arcu enim orci ullamcorper aenean. Scelerisque eget a nibh bibendum commodo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============
+    Our Clients Say
+    ================= -->
+    <section class="translate-y-[-210px]">
+        <div class="container">
+            <h2 class="text-[24px] lg:text-[40px] font-extrabold leading-[1.3] pb-[30px]">What Our Clients Say</h2>
+            <div class="lg:flex gap-[70px] items-center">
+                <div class="rounded-[8px] overflow-hidden min-w-[347px] lg:min-w-[416px]">
+                    <img src="../images/about.jpg" alt="images">
+                </div>
+                <div class="h-[332px] shadow px-4 md:px-12 pb-5 md:pb-12 bg-white mt-7 lg:mt-0 rounded-[8px]">
+                    <div class="bg-primary size-[40px] p-[14px] rounded-[8px] translate-y-[-15px]">
+                        <img src="../images/slider_icon.svg" alt="icons">
+                    </div>
+                    <p class="text-[14px] md:text-[18px] leading-[1.6]">Dolor, a eget elementum, integer nulla volutpat, nunc, sit. Quam iaculis varius mauris magna sem. Egestas sed sed suscipit dolor faucibus dui imperdiet at eget. Tincidunt imperdiet quis hendrerit aliquam feugiat neque cras sed. Dictum quam integer volutpat tellus, faucibus platea. Pulvinar turpis proin faucibus at mauris.</p>
+
+                    <div class="flex pt-10">
+                        <div class="pr-[24px] border-r border-[#E2E5F1]">
+                            <p class="text-[20px] whitespace-nowrap font-extrabold leading-[1.4]">Ralph Edwards</p>
+                            <p class="text-[#9397AD] text-[14px] leading-[1.6] pt-1">Head of Marketing</p>
+                        </div>
+                        <div class="py-[15px] pl-[24px]">
+                            <img src="../images/clients_logo_two.svg" alt="icons">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================
+     Choose us
+     ===================== -->
+    <section class="mt-[-150px] lg:mt-[-100px] pb-[112px]">
+        <div class="container">
+            <h2 class="text-[25px] lg:text-[40px] leading-[1.3] font-extrabold text-center pb-6">Why Choose Us?</h2>
+            <p class="text-[#9397AD] text-center text-[14px] md:text-[18px] leading-[1.6] pb-10">We personalize how we work to fit your project needs. Our approach helps augment innovation.</p>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                <div class="mx-auto">
+                    <div class="shadow size-[30px] rounded-full  ml-[47%]">
+                        <img src="../images/24_hr.svg" alt="icons">
+                    </div>
+                    <p class="text-center text-[15px] lg:text-[20px] font-extrabold leading-[1.4] pt-6">Build a functional prototype in 24 hrs</p>
+                </div>
+                <div class="mx-auto">
+                    <div class="shadow size-[30px] rounded-full  ml-[34%]">
+                        <img src="../images/presentation.svg" alt="icons">
+                    </div>
+                    <p class="max-w-[250px] text-center text-[15px] lg:text-[20px] font-extrabold leading-[1.4] pt-6">Create an MVP within two weeks</p>
+                </div>
+                <div class="mx-auto">
+                    <div class="shadow size-[30px] rounded-full  ml-[34%]">
+                        <img src="../images/analytics 1.svg" alt="icons">
+                    </div>
+                    <p class="max-w-[250px] text-center text-[15px] lg:text-[20px] font-extrabold leading-[1.4] pt-6">Kickstart software development</p>
+                </div>
+                <div class="mx-auto">
+                    <div class="shadow size-[30px] rounded-full  ml-[44%]">
+                        <img src="../images/chat.svg" alt="icons">
+                    </div>
+                    <p class="text-center text-[15px] lg:text-[20px] font-extrabold leading-[1.4] pt-6">Get 24/7 tech & business support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================
+    Get in Touch
+     ===================== -->
+    <section>
+       <div class="container bg-[#F3F6FF] py-[40px] lg:py-[72px]">
+        <div class="md:flex justify-between gap-6 sm:px-[40px] lg:px-[110px]">
+            <div>
+                <h2 class="text-[30px] lg:text-[40px] font-extrabold leading-[1.3] pb-6">Get in Touch</h2>
+                <p class="max-w-[416px] text-[14px] lg:text-[16px] leading-[1.6] text-[#565973] pb-[30px] lg:pb-[72px]">Have a project in mind? To request a quote contact us directly or fill out the form and let us know how we can help.</p>
+                <h2 class="text-[28px] pb-6 font-extrabold leading-[1.3]">Contact Info</h2>
+                <ul class="pb-[30px] lg:pb-[72px]">
+                    <li class="flex items-center gap-1">
+                        <div>
+                            <img src="../images/phn.svg" alt="icons">
+                        </div>
+                        <span>(406) 555-0120</span>
+                    </li>
+                    <li class="flex items-center gap-1">
+                        <div>
+                            <img src="../images/mail.svg" alt="icons">
+                        </div>
+                        <span>example@gmail.com</span>
+                    </li>
+                    <li class="flex items-center gap-1">
+                        <div>
+                            <img src="../images/map.svg" alt="icons">
+                        </div>
+                        <span>2464 Royal Ln. Mesa,New Jersey 45463</span>
+                    </li>
+                </ul>
+                <div class="flex items-center gap-4">
+                    <div class="size-[40px] border border-[#E2E5F1] rounded-[8px] flex items-center justify-center hover:bg-blue-600 group transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="none">
+                            <path class="group-hover:fill-white" d="M14.6667 0.5H1.33333C0.8725 0.5 0.5 0.873333 0.5 1.33333V14.6667C0.5 15.1267 0.8725 15.5 1.33333 15.5H8.5125V9.7H6.56417V7.42917H8.5125V5.7625C8.5125 3.825 9.69583 2.76917 11.4292 2.76917C12.0117 2.7675 12.595 2.7975 13.175 2.85833V4.875H11.9792C11.0392 4.875 10.8558 5.32333 10.8558 5.97917V7.425H13.1033L12.8117 9.69583H10.855V15.5H14.6667C15.1275 15.5 15.5 15.1267 15.5 14.6667V1.33333C15.5 0.873333 15.1275 0.5 14.6667 0.5Z" fill="#33354D"/>
+                        </svg>
+                    </div>
+
+                    <div class="size-[40px] border border-[#E2E5F1] rounded-[8px] flex items-center justify-center hover:bg-[#1CA1F2] group transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path class="group-hover:fill-white" d="M16.3609 6.66412C16.3717 6.80995 16.3717 6.95495 16.3717 7.09995C16.3717 11.5375 12.9942 16.6508 6.82175 16.6508C4.92008 16.6508 3.15341 16.1 1.66675 15.1433C1.93675 15.1741 2.19675 15.185 2.47758 15.185C4.04675 15.185 5.49091 14.655 6.64508 13.7508C5.16925 13.72 3.93258 12.7533 3.50591 11.4233C3.71341 11.4541 3.92175 11.475 4.14008 11.475C4.44091 11.475 4.74341 11.4333 5.02425 11.3608C3.48508 11.0491 2.33258 9.69829 2.33258 8.06662V8.02495C2.78008 8.27412 3.29925 8.42995 3.84925 8.45079C2.94508 7.84912 2.35258 6.81995 2.35258 5.65579C2.35258 5.03245 2.51841 4.46079 2.80925 3.96245C4.46175 5.99829 6.94591 7.32912 9.73091 7.47495C9.67925 7.22495 9.64758 6.96579 9.64758 6.70579C9.64758 4.85579 11.1442 3.34912 13.0042 3.34912C13.9709 3.34912 14.8434 3.75412 15.4567 4.40912C16.2151 4.26329 16.9417 3.98245 17.5867 3.59829C17.3376 4.37745 16.8067 5.03245 16.1109 5.44829C16.7867 5.37495 17.4417 5.18829 18.0434 4.92829C17.5867 5.59329 17.0159 6.18579 16.3609 6.66412Z" fill="#33354D"/>
+                        </svg>
+                    </div>
+                    <div class="size-[40px] border border-[#E2E5F1] rounded-[8px] flex items-center justify-center hover:bg-[#0077B5] group transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.15243 5.9975C5.15943 5.9975 5.97577 5.18116 5.97577 4.17416C5.97577 3.16716 5.15943 2.35083 4.15243 2.35083C3.14544 2.35083 2.3291 3.16716 2.3291 4.17416C2.3291 5.18116 3.14544 5.9975 4.15243 5.9975Z" fill="#33354D" class="group-hover:fill-white"/>
+                            <path d="M7.69743 7.37915V17.495H10.8383V12.4925C10.8383 11.1725 11.0866 9.89415 12.7233 9.89415C14.3374 9.89415 14.3574 11.4033 14.3574 12.5758V17.4958H17.4999V11.9483C17.4999 9.22332 16.9133 7.12915 13.7283 7.12915C12.1991 7.12915 11.1741 7.96832 10.7549 8.76248H10.7124V7.37915H7.69743ZM2.5791 7.37915H5.72493V17.495H2.5791V7.37915Z" fill="#33354D" class="group-hover:fill-white"/>
+                        </svg>
+                    </div>
+                    <div class="size-[40px] border border-[#E2E5F1] rounded-[8px] flex items-center justify-center hover:bg-purple-700 group transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path class="group-hover:fill-white" d="M9.99923 6.14746C7.87089 6.14746 6.14673 7.87246 6.14673 9.99996C6.14673 12.1283 7.87089 13.8533 9.99923 13.8533C12.1259 13.8533 13.8517 12.1283 13.8517 9.99996C13.8517 7.87246 12.1259 6.14746 9.99923 6.14746ZM9.99923 12.5033C8.61673 12.5033 7.4959 11.3825 7.4959 10.0008C7.4959 8.61829 8.61673 7.49829 9.99923 7.49829C11.3817 7.49829 12.5009 8.61829 12.5009 10.0008C12.5009 11.3825 11.3817 12.5033 9.99923 12.5033Z" fill="#33354D"/>
+                            <path class="group-hover:fill-white" d="M14.005 6.90409C14.5012 6.90409 14.9034 6.50189 14.9034 6.00575C14.9034 5.50962 14.5012 5.10742 14.005 5.10742C13.5089 5.10742 13.1067 5.50962 13.1067 6.00575C13.1067 6.50189 13.5089 6.90409 14.005 6.90409Z" fill="#33354D"/>
+                            <path class="group-hover:fill-white" d="M17.1109 5.09248C16.72 4.08498 15.9242 3.28832 14.9167 2.89915C14.3342 2.67998 13.7184 2.56248 13.095 2.54915C12.2925 2.51415 12.0384 2.50415 10.0034 2.50415C7.96838 2.50415 7.70754 2.50415 6.91171 2.54915C6.29004 2.56165 5.67421 2.67915 5.09171 2.89915C4.08338 3.28832 3.28754 4.08498 2.89754 5.09248C2.67838 5.67582 2.56088 6.29082 2.54838 6.91415C2.51254 7.71582 2.50171 7.96998 2.50171 10.0058C2.50171 12.0408 2.50171 12.3 2.54838 13.0975C2.56088 13.7208 2.67838 14.3358 2.89754 14.92C3.28838 15.9267 4.08421 16.7233 5.09254 17.1133C5.67254 17.34 6.28838 17.4683 6.91338 17.4883C7.71588 17.5233 7.97004 17.5342 10.005 17.5342C12.04 17.5342 12.3009 17.5342 13.0967 17.4883C13.7192 17.4758 14.335 17.3575 14.9184 17.1392C15.9259 16.7483 16.7217 15.9525 17.1125 14.945C17.3317 14.3617 17.4492 13.7467 17.4617 13.1233C17.4975 12.3217 17.5084 12.0675 17.5084 10.0317C17.5084 7.99582 17.5084 7.73748 17.4617 6.93998C17.4509 6.30832 17.3342 5.68248 17.1109 5.09248ZM16.0959 13.0358C16.09 13.5158 16.0034 13.9917 15.8367 14.4425C15.5825 15.0983 15.065 15.6166 14.41 15.8683C13.9642 16.0342 13.4942 16.1208 13.0184 16.1275C12.2267 16.1642 12.0034 16.1733 9.97338 16.1733C7.94171 16.1733 7.73421 16.1733 6.92754 16.1275C6.45338 16.1217 5.98171 16.0342 5.53671 15.8683C4.87921 15.6175 4.35838 15.0992 4.10421 14.4425C3.94088 13.9975 3.85254 13.5267 3.84504 13.0517C3.80921 12.26 3.80088 12.0367 3.80088 10.0067C3.80088 7.97582 3.80088 7.76832 3.84504 6.96082C3.85088 6.48082 3.93754 6.00582 4.10421 5.55498C4.35838 4.89748 4.87921 4.37998 5.53671 4.12832C5.98171 3.96332 6.45338 3.87582 6.92754 3.86915C7.72004 3.83332 7.94254 3.82332 9.97338 3.82332C12.0042 3.82332 12.2125 3.82332 13.0184 3.86915C13.4942 3.87498 13.9642 3.96248 14.41 4.12832C15.065 4.38082 15.5825 4.89915 15.8367 5.55498C16 5.99998 16.0884 6.47082 16.0959 6.94582C16.1317 7.73832 16.1409 7.96082 16.1409 9.99165C16.1409 12.0217 16.1409 12.24 16.105 13.0367H16.0959V13.0358Z" fill="#33354D"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <form class="bg-white p-8 rounded-[8px] shadow max-w-[526px] mt-6 md:mt-0">
+                <p class="text-[16px] font-semibold leading-[1.6] pb-1">Sevice</p>
+                <div class="flex max-w-[462px] items-center justify-between border border-[#D4D7E5] px-4 py-[13px] rounded-[8px]">
+                    <input type="text" class="outline-none" placeholder="Choose the service you are interested in">
+                    <div>
+                        <img src="../images/footer_down.svg" alt="icons">
+                    </div>
+                </div>
+
+                <p class="text-[16px] pt-6 font-semibold leading-[1.6] pb-1">Full name</p>
+                <div class="max-w-[462px] border border-[#D4D7E5] px-4 py-[13px] rounded-[8px]">
+                    <input type="text" class="outline-none">
+                </div>
+
+                <p class="text-[16px] pt-6 font-semibold leading-[1.6] pb-1">Email address</p>
+                <div class="max-w-[462px] border border-[#D4D7E5] px-4 py-[13px] rounded-[8px]">
+                    <input type="text" class="outline-none">
+                </div>
+
+                <p class="text-[16px] pt-6 font-semibold leading-[1.6] pb-1">Email address</p>
+                <div class="max-w-[462px] h-[104px] border border-[#D4D7E5] px-4 py-[13px] rounded-[8px]">
+                    <input type="text" class="outline-none">
+                </div>
+
+                <div class="flex items-center gap-2 pt-8">
+                    <input id="check" type="checkbox">
+                    <label for="check">I agree to the <span class="text-primary">Terms</span> & <span class="text-primary">Conditions.</span></label>
+                </div>
+                <button class="btn_primary mt-8">Send request</button>
+            </form>
+        </div>
+       </div>
+    </section>
+    <!-- ====================
+     Footer
+     ======================== -->
+    <footer class="pt-[72px]">
+        <div class="container">
+            <div class="sm:grid sm:grid-cols-[340px_1fr_1fr_1fr] lg:grid-cols-[600px_1fr_1fr_1fr] gap-5">
+                <div>
+                    <div class="pb-6">
+                        <img src="../images/main_logo.svg" alt="logo">
+                    </div>
+                    <p class="text-[#565973] max-w-[416px] pb-10 text-[14px] leading-[1.6]">Proin ipsum pharetra,
+                        senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis
+                        etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor
+                        ullamcorper sodales ultrices eros. </p>
+                    <p class="text-[14px] font-semibold leading-[1.6] pb-2">Subscribe to our newsletter</p>
+                    <div class="flex items-center max-w-[416px]">
+                        <div
+                            class="flex items-center gap-2 px-3 py-4 border h-[44px] border-[#B4B7C9] rounded-l-[8px] max-w-[416px]">
+                            <div class="min-w-[20px]">
+                                <img src="../images/email.svg" alt="email">
+                            </div>
+                            <input type="email" class="outline-none" placeholder="Your Email">
+                        </div>
+                        <button class="btn_primary rounded-l-none h-[44px]">Subscribe</button>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="pt-5 sm:pt-0"><a class="text-[16px] font-semibold leading-[1.6]" href="#">Home</a></li>
+                    <li>
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">Services</a>
+                    </li>
+                    <li>
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">Portfolio</a>
+                    </li>
+                    <li class="pb-10">
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a class="text-[16px] font-semibold leading-[1.6]" href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><a class="text-[16px] font-semibold leading-[1.6]" href="#">Facebook</a></li>
+                    <li><a class="text-[16px] font-semibold leading-[1.6]" href="#">Linkedin</a></li>
+                    <li><a class="text-[16px] font-semibold leading-[1.6]" href="#">Twitter</a></li>
+                    <li><a class="text-[16px] font-semibold leading-[1.6]" href="#"> Instragram</a></li>
+                </ul>
+
+                <ul class="hidden md:block">
+                    <li><a class="text-[16px] font-semibold leading-[1.6]" href="#">Contact Us</a></li>
+                    <li class="text-primary text-[16px] leading-[1.6] font-semibold">example@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
